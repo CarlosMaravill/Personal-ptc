@@ -1,11 +1,11 @@
-body{
+.boGes{
     background-color: #c9c6c6;
 }
 
 .container{
     background-color: #F6F5FB;
-    width: 40%;
-    height: 50%;
+    width: 700px;
+    height: 470px;
     border-radius: 10px;
 }
 
@@ -168,13 +168,22 @@ body{
 }
 
 
-select{
+.AnDirRie select{
     border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
     border-radius: 0;
     border-bottom: 1px solid #B38ADD;
     width: 100%;
 }
+
+.MediPrev select{
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 0;
+    border-bottom: 1px solid #B38ADD;
+    width: 100%;
+}
+
 
 .acept{
     position: relative;
@@ -199,7 +208,7 @@ select{
     align-items: center;
 }
 
-button i{
+.act button i{
     position: relative;
     left: 5px;
 }
@@ -220,12 +229,12 @@ button i{
     height: 80px;
 }
 
-.file-select {
+.file-select2 {
     position: relative;
 }
 
 
-.file-select::before {
+.file-select2::before {
     background-color: #d1ccf7;
     border: 1px solid #d1ccf7;
     font-size: 14px;
@@ -244,16 +253,52 @@ button i{
 }
 
 
-.file-select input[type="file"] {
+.file-select2 input[type="file"] {
     opacity: 0;
     width: 100%;
     height: 40px;
 }
 
 
-#src-file1::before {
+#src-file2::before {
     content: 'Adjuntar archivos';
     width: 100%;
     position: absolute;
     left: 0px;
+}
+
+
+@media screen and (max-width: 1920px) {
+    .container{
+        width: 700px;
+        overflow: auto !important;
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .container{
+        width: 700px;
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container{
+        position: absolute;
+        width: 700px;
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+        padding-bottom: 10px !important;
+        height: 350px;
+    }
+    .btns{
+        position: relative;
+        top: -10px;
+    }
 }

@@ -1,26 +1,26 @@
-body {
+.boAg {
     background-color: #a7a4a6;
 }
 
-.contenedor {
+.contAgen {
     background-color: rgb(255, 255, 255);
     position: abs;
     width: 400px;
     height: 500px;
 }
 
-form{
+.frmAgenda{
     width: 80%;
     height: 400px;
     overflow: hidden;
 }
 
-form .btnos{
+.frmAgenda .btnos{
     display: flex;
     flex-direction: column;
 }
 
-form .botons{
+.frmAgenda .botons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@ form .botons{
 }
 
 
-form .inombre, .idescrip{
+.frmAgenda .inombre, .idescrip{
     background: none;
     border: none;
     color: #3a3939;
@@ -41,7 +41,7 @@ form .inombre, .idescrip{
     height: 45px;
 }
 
-form label{
+.frmAgenda label{
     position: relative;
     top: -35px;
     width: 100%;
@@ -50,7 +50,7 @@ form label{
 }
 
 
-form label::after{
+.frmAgenda label::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -61,31 +61,31 @@ form label::after{
     transition: all 0.3s ease;
 }
 
-span{
+.frmAgenda span{
     position: absolute;
     bottom: 5px;
     transition: all 0.3s ease;
     color: #0a0a0a;
 }
 
-form input:focus + label span,
-form input:valid + label span{
+.frmAgenda input:focus + label span,
+.frmAgenda input:valid + label span{
     transform: translateY(-120%);
     font-size: 12px;
     color: #0a0a0a;
 }
 
-form input:focus + label::after,
-form input:valid + label::after{
+.frmAgenda input:focus + label::after,
+.frmAgenda input:valid + label::after{
     transform: translateX(0%);
 }
 
 
-form .row{
+.frmAgenda .row{
     height: 80px;
 }
 
-form .ifecha, .ihora{
+.frmAgenda .ifecha, .ihora{
     background: none;
     border-top: none;
     border-color: #a7a4a6;
